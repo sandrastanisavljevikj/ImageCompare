@@ -8,9 +8,9 @@ example: the body of the request i used, looks like:
 	"frontImage": "tree.png",
 	"backImage": "back-test.png"
 }
-and the url for the test post request is https://localhost:44369/api/compare
+and the url for the test post request is https://localhost:44369/api/compare, so the endpoint is /api/compare.
 
-Update the port number if necessary in your project properties and in the url as well.
+Update the use ssl setting if necessary: go to project properties -> Debug-> use SSL and update the url you call as well.
 
 Make sure that the images are present in the wwwroot folder (this would potentialy be done automatically with a client part that allows upload option).
 

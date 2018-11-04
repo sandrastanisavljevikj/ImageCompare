@@ -14,7 +14,7 @@ namespace ImageCompareApi.Services
 
         public double Compare(string imagePath, ApiConfig configuration, bool front = true)
         {
-            if (!File.Exists(imagePath))
+            if (!File.Exists($"{Directory.GetCurrentDirectory()}{@"\wwwroot\"}{imagePath}"))
             {
                 throw new Exception("The requested file is not uploaded.");
             }
